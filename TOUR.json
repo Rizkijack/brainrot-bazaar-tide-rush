@@ -1,1 +1,6 @@
-{"tour": 1, "steps": [{"screenshot": "1-start.png"}, {"screenshot": "2-play.png", "keys": ["Right"], "wait_ms": 1000}, {"screenshot": "3-end.png", "keys": ["Down"], "wait_ms": 1000}]}
+{"tour": 1, "steps": [
+  {"screenshot": "screenshots/1-cover.jpg", "keys": [], "wait_ms": 800},
+  {"screenshot": "screenshots/2-play.jpg", "keys": ["E"], "wait_ms": 1200},
+  {"screenshot": "screenshots/3-tide.jpg", "keys": ["Space"], "wait_ms": 1500,
+   "call": {"module": "ServerScriptService.Server.TideEvent", "fn": "SweepTide", "arg": 0, "on": "Server"}}
+]}
